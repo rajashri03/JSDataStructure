@@ -1,6 +1,8 @@
 //*Read 10 random number and find scond mininum and second maximum value
 var randoms = [...Array(10)].map(() => Math.floor(Math.random() * 1000));
-console.log(randoms);
+var sortnum=randoms.sort();
+console.log(sortnum);
+
 const minimumIndex = randoms => {
    return randoms.indexOf(Math.min(...randoms));
 };
